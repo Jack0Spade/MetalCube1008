@@ -16,6 +16,7 @@
         width: 100%;
         height: 200vh;
         background: url(../asset/background-wood-mobile.jpg);
+
         // Navigation bar and burger
 
         nav{
@@ -182,5 +183,143 @@
             }
         }
 
+    }
+}
+
+@media only screen and (min-width: 64px){
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    // Disable burger on desktop
+    .burger{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        height: 200vh;
+        background: url(../asset/background-wood-desktop.png);
+        background-size: cover;
+    }
+
+    // navigation bar
+
+    nav{
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: white;
+        z-index: 1000;
+        transition: 0.2s;
+    }
+
+    .nav-title{
+        font-size: 30px;
+        font-family: algerian;
+    }
+
+    ul{
+        display: flex;
+        
+    }
+
+    li{
+        list-style: none;
+
+    }
+
+    .link{
+        text-decoration: none;  
+        color: black;
+        padding: 0px 20px;
+        font-size: 30px;
+        outline: none;
+        font-family: 'Merienda One', cursive;
+    }
+
+    // Navbar on scroll
+
+    nav.shrink{
+        height: 40px;
+        transition: 0.2s;
+    }
+
+    // Introduction text
+
+    .intro{
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 200px;
+
+    }
+
+    .intro-text{
+        font-family: 'Merienda One', cursive;
+        font-size: 60px;
+        color: white;
+    }
+
+    .intro-desc{
+        font-family: roboto;
+        color: white;
+        margin-top: 60px;
+    }
+
+
+    // Parallax Images
+
+    .table{
+        position: absolute;
+        width: 100%;
+        pointer-events: none;
+    }
+    
+    .coffee{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    // Location
+
+    .location{
+        position: relative;
+        top: 110vh;
+        width: 100%;
+        text-align: center;
+        
+        .location-text{
+            color: white;
+            font-family: 'Merienda One', cursive;
+            font-size: 60px;   
+        }
+
+        .location-desc{
+            position: relative;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        .loc-desc{
+            color: white;
+            text-align: left;
+            padding: 10px 0px;
+            font-family: roboto;
+            text-align: center;
+        }
     }
 }

@@ -1,0 +1,4 @@
+Font - Algerian FF for "MetalCube 1008"
+     - Torus Outline bold for "Cafe-Bistro"
+     - Good Vibrations Pro for "Menu Titles"
+     - Cartesius small caps for "Menus"

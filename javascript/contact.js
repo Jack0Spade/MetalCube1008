@@ -4,7 +4,6 @@ let mobile = window.matchMedia('(max-width: 640px)');
 
 // Hamburger Script
 
-
 let burger = document.querySelector('.burger');
 
 burger.addEventListener('click', function (){
